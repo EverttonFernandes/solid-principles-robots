@@ -1,4 +1,4 @@
-package solid.principles.srp.good;
+package solid.principles.srp.good.gardener;
 
 public class GardenerRobot {
     private String name;

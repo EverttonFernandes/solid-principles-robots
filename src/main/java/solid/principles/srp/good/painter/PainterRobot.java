@@ -1,4 +1,4 @@
-package solid.principles.srp.good;
+package solid.principles.srp.good.painter;
 
 public class PainterRobot {
 
