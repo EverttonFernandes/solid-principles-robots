@@ -1,8 +1,9 @@
 package solid.principles.srp.good.chef;
 
+import solid.principles.isp.RobotActionValidator;
 import solid.principles.srp.good.RobotAction;
 
-public class ChefRobot {
+public class ChefRobot implements RobotActionValidator {
 
     private String name;
     private RobotAction action;
@@ -12,7 +13,8 @@ public class ChefRobot {
         this.action = validateAction(action);
     }
 
-    private RobotAction validateAction(RobotAction action) throws Exception {
+    @Override
+    public RobotAction validateAction(RobotAction action) throws Exception {
         if (!RobotAction.COOK.equals(action)) {
             throw new Exception("I'm can only cooking");
         }

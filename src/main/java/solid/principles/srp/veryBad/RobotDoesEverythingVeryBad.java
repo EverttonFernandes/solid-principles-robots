@@ -16,19 +16,19 @@ public class RobotDoesEverythingVeryBad {
         System.out.println("I am a painter");
         System.out.println("I am a driver");
 
-        if (getAction() == "cook") {
+        if (this.getAction().equals("cook")) {
             System.out.println("I'm cooking");
         }
 
-        if (getAction() == "cut") {
+        if (this.getAction().equals("cut")) {
             System.out.println("I am cutting grass");
         }
 
-        if (getAction() == "paint") {
+        if (this.getAction().equals("paint")) {
             System.out.println("I'am painting");
         }
 
-        if (getAction() == "drive") {
+        if (this.getAction().equals("drive")) {
             System.out.println("I am driving");
         }
 
