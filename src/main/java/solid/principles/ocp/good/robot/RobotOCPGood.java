@@ -3,11 +3,11 @@ package solid.principles.ocp.good.robot;
 import solid.principles.ocp.good.abstraction.UseKnife;
 import solid.principles.ocp.good.abstraction.UsePaintbrush;
 
-public class Robot implements UseKnife, UsePaintbrush {
+public class RobotOCPGood implements UseKnife, UsePaintbrush {
 
     private final String name;
 
-    public Robot(String name) {
+    public RobotOCPGood(String name) {
         this.name = name;
     }
 
