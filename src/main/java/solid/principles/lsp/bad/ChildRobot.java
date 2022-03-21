@@ -1,8 +1,9 @@
 package solid.principles.lsp.bad;
 
+import solid.principles.lsp.FatherRobot;
 import solid.principles.lsp.bad.Exception.WaterException;
 
-final class ChildRobot extends FatherRobot{
+final class ChildRobot extends FatherRobot {
     private final String name = "Eden";
 
     @Override
