@@ -1,6 +1,6 @@
 package solid.principles.srp.good.chef;
 
-import solid.principles.isp.RobotActionValidator;
+import solid.principles.srp.RobotActionValidator;
 import solid.principles.srp.good.RobotAction;
 
 public class ChefRobot implements RobotActionValidator {

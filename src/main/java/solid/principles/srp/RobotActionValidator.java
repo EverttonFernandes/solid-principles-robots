@@ -1,4 +1,4 @@
-package solid.principles.isp;
+package solid.principles.srp;
 
 import solid.principles.srp.good.RobotAction;
 

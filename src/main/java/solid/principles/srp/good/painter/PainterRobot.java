@@ -1,6 +1,6 @@
 package solid.principles.srp.good.painter;
 
-import solid.principles.isp.RobotActionValidator;
+import solid.principles.srp.RobotActionValidator;
 import solid.principles.srp.good.RobotAction;
 
 public class PainterRobot implements RobotActionValidator {
