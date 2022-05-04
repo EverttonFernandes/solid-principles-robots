@@ -4,7 +4,7 @@ import solid.principles.dip.bad.Exception.CutterPizzaException;
 
 public class PizzaCutterArm {
     private final String name = "pizzaCutterArm";
-    private CutterPizza cutterPizza;
+    private final CutterPizza cutterPizza;
 
     public PizzaCutterArm(CutterPizza cutterPizza) {
         this.cutterPizza = isCutterPizza(cutterPizza);

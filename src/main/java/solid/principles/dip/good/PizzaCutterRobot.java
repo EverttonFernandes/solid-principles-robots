@@ -8,4 +8,7 @@ public class PizzaCutterRobot {
         this.cutPizza = cutPizza;
     }
 
+    public void cutPizzaSlice(){
+        this.cutPizza.cutPizza();
+    }
 }
