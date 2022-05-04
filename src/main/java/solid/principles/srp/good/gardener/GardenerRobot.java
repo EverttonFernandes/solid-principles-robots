@@ -1,11 +1,13 @@
 package solid.principles.srp.good.gardener;
 
-import solid.principles.srp.RobotActionValidator;
-import solid.principles.srp.good.RobotAction;
+import solid.principles.srp.ActionValidator.RobotActionValidator;
+import solid.principles.srp.good.abstration.RobotAbstraction;
+import solid.principles.srp.good.actions.RobotAction;
 
-public class GardenerRobot implements RobotActionValidator {
-    private String name;
-    private RobotAction action;
+public class GardenerRobot extends RobotAbstraction implements RobotActionValidator {
+
+    private final String name;
+    private final RobotAction action;
 
     public GardenerRobot(String name, RobotAction action) throws Exception {
         this.name = name;
@@ -20,12 +22,25 @@ public class GardenerRobot implements RobotActionValidator {
         return action;
     }
 
-    public static void robotPresentation() {
-        System.out.println("Hello my name is: ");
+    @Override
+    public void robotPresentation() {
+        showName();
+        showProfession();
+        showAction();
+    }
+
+    @Override
+    public void showName() {
+        System.out.println("Hello my name is: ".concat(this.name));
+    }
+
+    @Override
+    public void showProfession() {
         System.out.println("I am a gardener");
     }
 
-    private void cutGrass() {
+    @Override
+    public void showAction() {
         System.out.println("I am cutting grass");
     }
 
