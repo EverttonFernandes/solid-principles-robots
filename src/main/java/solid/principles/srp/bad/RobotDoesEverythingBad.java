@@ -17,6 +17,10 @@ public class RobotDoesEverythingBad {
         return action;
     }
 
+    public void setAction(String action) {
+        this.action = action;
+    }
+
     public void robotPresentation() {
         System.out.println("Hello my name is: " + this.sayName());
         System.out.println("I am a chef");
@@ -29,7 +33,7 @@ public class RobotDoesEverythingBad {
         return getName();
     }
 
-    public void MakeFoodMowingTheGrassPaintTheWallAndDrive() {
+    public void makeFoodMowingTheGrassPaintTheWallAndDrive() {
         if ("cook".equals(this.getAction())) {
             this.toCook();
         }

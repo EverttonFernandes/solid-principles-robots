@@ -24,24 +24,24 @@ public class GardenerRobot extends RobotAbstraction implements RobotActionValida
 
     @Override
     public void robotPresentation() {
-        showName();
-        showProfession();
-        showAction();
+        System.out.println(showName());
+        System.out.println(showProfession());
+        System.out.println(showAction());
     }
 
     @Override
-    public void showName() {
-        System.out.println("Hello my name is: ".concat(this.name));
+    public String showName() {
+        return "Hello my name is: ".concat(this.name);
     }
 
     @Override
-    public void showProfession() {
-        System.out.println("I am a gardener");
+    public String showProfession() {
+       return "I am a gardener";
     }
 
     @Override
-    public void showAction() {
-        System.out.println("I am cutting grass");
+    public String showAction() {
+        return "I am cutting grass";
     }
 
 }
