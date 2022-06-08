@@ -2,16 +2,17 @@ package solid.principles.lsp.good;
 
 import solid.principles.lsp.FatherRobot;
 
-final class ChildRobot extends FatherRobot implements MakeCappuccino {
+public class ChildRobot extends FatherRobot implements MakeCappuccino {
     private final String name = "Eden";
 
     @Override
-    protected void makeCoffee() {
-        super.makeCoffee();
+    public String makeCoffee() {
+        return "I'm Eden, son of Sam ".concat(super.makeCoffee());
     }
 
     @Override
-    public void makeCappuccino() {
-        System.out.println("Here's your cappuccino");
+    public String makeCappuccino() {
+        return "Here's your cappuccino";
     }
+
 }

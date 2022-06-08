@@ -7,7 +7,7 @@ final class ChildRobot extends FatherRobot {
     private final String name = "Eden";
 
     @Override
-    protected void makeCoffee() {
+    protected String makeCoffee() {
         System.out.println("I can't make coffee but here's water");
         throw new WaterException();
     }
